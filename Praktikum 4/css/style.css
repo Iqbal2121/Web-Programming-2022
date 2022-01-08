@@ -1,0 +1,58 @@
+body{
+    color: blue;
+    background-color: whitesmoke;
+}
+
+.table1{
+    width: 100%;
+    vertical-align: text-top;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table2{
+    width: 100%;
+}
+
+.td1{
+    width: 250px;
+    padding-top: 30px;
+}
+
+.td2{
+    vertical-align: top;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.td3{
+    vertical-align: top;
+}
+
+.paragraf{
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.video{
+    width: 400px;
+    height: 240px;
+    float: left;
+}
+
+.field1{
+    width: 350px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.field2{
+    width: 350px;
+    float: left;
+    margin-left: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img{
+    width: 200px;
+    height: 100px;
+}

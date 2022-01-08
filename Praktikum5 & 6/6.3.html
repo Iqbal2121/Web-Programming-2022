@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            background-color: forestgreen;
+        }
+        .container-header{
+            display: flex;
+        }
+        .container-header{
+            flex-grow: 6;
+            flex-direction: column;
+        }
+        header{
+            margin: 1em 1em;
+            padding: 1em;
+            height: 50px;
+            flex-grow: 1;
+            background-color: khaki;
+        }
+        .container-konten{
+            display: flex;
+            flex-grow: 4;
+            height: 465px;
+        }
+        article{
+            margin: 1em 1em;
+            padding: 1em;
+            display: flex;
+            flex-grow: 3;
+            order: 1;
+            background-color: skyblue;
+        }
+        #gambar1{
+            margin: 40px 0 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        aside{
+            margin: 1em 1em;
+            padding: 1em;
+            flex-grow: 1;
+            background-color: peachpuff;
+        }
+        footer{
+            margin: 1em 1em;
+            padding: 1em;
+            flex-grow: 1;
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-header">
+        <header>
+           Header</p>
+        </header>
+    <div class="container-konten">
+        <article>
+            <p>Article</p>
+                <div id="gambar1">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div id="gambar1">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div id="gambar1">
+                    <img src="img/3.png" alt="">
+                </div>
+        </article>
+        <aside>
+            <p>Aside</p>
+        </aside>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    </div>
+</body>
+</html>

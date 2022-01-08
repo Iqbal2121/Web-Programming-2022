@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+        }
+        .container-navigasi{
+            display: flex;
+        }
+        .container-header{
+            display: flex;
+        }
+        .container-navigasi{
+            flex-grow: 2;
+        }
+        .container-header{
+            flex-grow: 6;
+            flex-direction: column;
+        }
+        nav{
+            padding: 1em;
+            flex-grow: 2;
+            height: 100vh;
+            background-color: orangered;
+        }  
+        header{
+            padding: 1em;
+            height: 50px;
+            flex-grow: 1;
+            background-color: khaki;
+        }
+        .container-konten{
+            display: flex;
+            flex-grow: 4;
+        }
+        article{
+            padding: 1em;
+            flex-grow: 3;
+            background-color: skyblue;
+        }
+        aside{
+            padding: 1em;
+            flex-grow: 1;
+            background-color: peachpuff;
+        }
+        footer{
+            padding: 1em;
+            flex-grow: 1;
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-navigasi">
+        <nav>
+            Nav
+        </nav>
+    </div>
+    <div class="container-header">
+        <header>
+            Header
+        </header>
+    <div class="container-konten">
+        <article>
+            Article
+        </article>
+        <aside>
+            Aside
+        </aside>
+    </div>
+    <footer>
+        Footer
+    </footer>
+    </div>
+</body>
+</html>

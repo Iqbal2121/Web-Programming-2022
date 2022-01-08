@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+</head>
+<body>
+    <ul style="list-style: none;">
+        <li>
+            <label for="nama"> Nama Pelanggan </label><br>
+            <input type="text" name="nama_pelanggan" value="" id="nama" maxlength="30">
+        </li>
+        <br>
+        <li>
+            <label for="mail"> Email </label><br>
+            <input type="text" name="Email" value="" id="email">
+        <br>
+        </li>
+        <br>
+        <li>
+        <label for="keberangkatan"> Jam Keberangkatan </label><br>
+            <input type="time" name="jam" value="" id="departure">
+        <br>
+        </li>
+        <br>
+        <li>
+            <label for="tujuan_keberangkatan"> Tujuan Keberangkatan </label><br>
+            <input type="text" name="tujuan" value="" id="destination">
+        <br>
+        </li>
+        <br>
+        <li>
+            <label for="tiket"> Jumlah Tiket </label><br>
+            <input type="number" name="Tiket" value="" id="jumlah_tiket" max="10" min="1">
+            <br>
+        </li>
+        <br>
+        <li>
+            <button onclick="validasi()">Selesai</button>
+            <br>
+            <span id="hasil"></span>
+        </li>
+    </ul>
+        <script>
+            function validasi(){
+                let pelanggan = document.getElementById("nama").value;
+                let elektronik_mail = document.getElementById("email").value;
+                let jadwal_keberangkatan = document.getElementById("departure").value;
+                let destinasi = document.getElementById("destination").value;
+                let Jumlah_Tiket = document.getElementById("jumlah_tiket").value;
+    
+                let area_hasil = document.getElementById("hasil");
+    
+                area_hasil.innerHTML = "Nama anda adalah " + pelanggan +
+                " Email anda " + elektronik_mail + 
+                " Jam keberangkatan anda " + jadwal_keberangkatan +  
+                " Tujuan keberangkatan anda adalah ke Kota " + destinasi + 
+                " Jumlah tiket yang anda beli " + Jumlah_Tiket + 
+                "terima kasih formulir tiket anda telah tervalidasi";
+            }
+        </script>
+</body>
+</html>

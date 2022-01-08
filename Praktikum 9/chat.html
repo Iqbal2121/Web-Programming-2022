@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+        #box{
+            width: 50%;
+            height: 300px;
+            padding: 0 5px;
+            border: 1px solid black;
+        }
+        input[type=text]{
+            width: 91%;
+        }
+        .container_kirim{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+
+        </div>
+        <div class="container_kirim"><input type="text" value="" id="pesan"><button type="submit" id="kirim">Kirim</button></div>
+    </div>
+
+    <script>
+        const ChatBox = document.getElementById("box");
+        const InputPesan = document.getElementById("pesan");
+        const kirim_pesan = document.getElementById("kirim");
+
+        kirim_pesan = function(){
+            const p = document.createElement("P");
+            ChatBox.appendChild(p);
+            p.innerHTML = InputPesan.value;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <script>
+        function login(){
+            let bagian_nama = document.getElementById("name").value;
+            let bagian_password = document.getElementById("pw").value;
+
+            if(bagian_nama == "ahmad2017" && bagian_password == "integrity"){
+                location.replace("berhasil.html")
+                window.alert("Berhasil Login")
+            }else{
+                location.replace("login.html");
+                window.alert("Login tidak berhasil. Silahkan ulangi")
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="width: 20%;">
+    <legend> Halaman Login</legend>
+    <ul style="list-style: none;">
+        <li>
+            <label for="Username"> Username </label><br>
+            <input type="text" name="Username" value="" id="name">
+        </li>
+        <br>
+        <li>
+            <label for="Password"> Password </label><br>
+            <input type="password" name="Password" value="" id="pw">
+            <br>
+        </li>
+        <br>
+        <li>
+            <button onclick="login()">Login</button>
+        </li>
+    </ul>
+    </fieldset>
+</body>
+</html>

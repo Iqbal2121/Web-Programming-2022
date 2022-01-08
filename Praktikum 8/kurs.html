@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+    <!-- <script src="kurs.js"></script> -->
+    <script>
+        function konversi(){
+
+            const kurs = document.getElementById("valas").value;
+            const masukkan = document.getElementById("input").value;
+            const keluaran = document.getElementById("output");
+            keluaran.innerHTML = masukkan * kurs
+
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="width: 450px;">
+        <legend>Kurs Rupiah - Mata Asing</legend>
+        <table border="1">
+            <tr>
+                <th style="width: 178px;">Masukkan Nilai</th>
+                <th style="width: 125px;">Valas</th>
+                <th style="width: 178px;">Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input onchange="konversi()" type="number" value="" id="input"></td>
+                <td>
+                    <select onchange="konversi()" id="valas" >
+                        <option value="9915" id="USD">Dolar US</option>
+                        <option value="13472" id="SGD">Dolar Singapore</option>
+                        <option value="874" id="RM">Ringgit Malaysia</option>
+                        <option value="120" id="YEN">Yen Jepang</option>
+                        <option value="15888" id="EUR">Euro</option>
+                        <option value="3592" id="SR">Riyal Arab Saudi</option>
+                    <select/>
+                </td>
+                <td><p id="output"></p></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

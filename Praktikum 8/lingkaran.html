@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas dan Keliling</title>
+</head>
+<script>
+    function menghitung(){
+
+        const phi = 3.14;
+        const jari_jari = document.getElementById("bil1").value;
+        const luas_lingkaran = phi * jari_jari;
+        const keliling_lingkaran = 2.0 * phi * jari_jari;
+
+        const hasil_hitung = document.getElementById("hasil");
+        hasil_hitung.innerHTML = 'Luas : ' + luas_lingkaran + "\nKeliling : " + keliling_lingkaran
+    }
+</script>
+<body>
+    <h2>Menghitung Luas & Keliling Lingkaran</h2>
+    Masukkan Jari-Jari Lingkaran : 
+    <input type="number" value="" size="10" id="bil1"/>
+    <br>
+    <button onclick="menghitung()">Hitung</button>
+    <br> 
+    Hasil : <span id="hasil"></span>
+</body>
+</html>

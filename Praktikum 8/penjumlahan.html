@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Dua Bilangan</title>
+    <script>
+        function jumlahkan(){
+            let str_angka1 = document.getElementById("bilangan1");
+            let str_angka2 = document.getElementById("bilangan2");
+
+            let angka1 = parseInt(str_angka1);
+            let angka2 = parseInt(str_angka2);
+
+            let hasil_angka = angka1 + angka2;
+
+            document.getElementById("hasil").innerHTML = hasil_angka
+        }
+    </script>
+</head>
+<body>
+    <h2>Kalkulator Penjumlahan</h2>
+    <form>
+        bil1 : <input type="number" id="bilangan1"/>
+        <br>
+        <br>
+        bil2 : <input type="number" id="bilangan2"/>
+        <br>
+        <br>
+        <input type="button" value="hitung" onclick="jumlahkan()">
+        <br>
+        <br>
+        Hasil Penjumlahan : <span id="hasil"></span>
+    </form>
+</body>
+</html>

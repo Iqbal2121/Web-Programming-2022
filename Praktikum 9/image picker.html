@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    
+</head>
+<body>
+    <h2>Image Picker</h2>
+    <select onchange="gambar()" id="TampilGambar" >
+        <option value="Tarsius">Tarsius</option>
+        <option value="Anoa">Anoa</option>
+        <option value="Walabi">Walabi</option>
+        <option value="Tapir">Tapir</option>
+        <option value="Bekantan">Bekantan</option>
+        <option value="Harimau Sumatera">Harimau Sumatera</option>
+    </select>
+    <div id="lihat"></div>
+
+    <script>
+        function gambar(){
+
+            let y = document.getElementById("tampilgambar").value;
+
+            if(y == "Tarsius"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/Tarsius.jpg"></img>'
+                window.alert("ini gambar Tarsius")
+            }if(y == "Anoa"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/anoa.jpg"></img>'
+                window.alert("ini gambar Anoa")
+            }if(y == "Walabi"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/walabi.jpg"></img>'
+                window.alert("ini gambar Walabi")
+            }if(y == "Tapir"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/tapir.jpg"></img>'
+                window.alert("ini gambar Tapir")
+            }if(y == "Bekantan"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/bekantan.jpg"></img>'
+                window.alert("ini gambar Bekantan")
+            }if(y == "Harimau Sumatera"){
+                Tarsius = document.getElementById("lihat").innerHTML = '<img src="gambar/harimau.jpg"></img>'
+                window.alert("ini gambar Harimau Sumatera")
+            }
+
+        }
+    </script>
+</body>
+</html>

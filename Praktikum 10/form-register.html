@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Hosting</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body{
+                height: 100vh;
+                background-image: url(https://asset.gecdesigns.com/img/backgrounds/isometric-e-learning-background-template-1612282245987-cover.webp);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+        }
+        .container{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                padding: 20px 25px;
+                width: 300px;
+
+                background-color: rgba(0,0,0,.7);
+                box-shadow: 0 0 10px rgba(255,255,255,.3);
+        }
+        .container h1{
+                text-align: left;
+                color: #fafafa;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                border-bottom: 4px solid #2979ff;
+        }
+        .container label{
+                text-align: left;
+                color: #90caf9;
+        }
+        .container form input{
+                width: calc(100% - 20px);
+                padding: 8px 10px;
+                margin-bottom: 15px;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid #2979ff;
+                color: #fff;
+                font-size: 20px;
+        }
+        .container form button{
+                width: 100%;
+                padding: 5px 0;
+                border: none;
+                background-color:black;
+                font-size: 18px;
+                color: #fafafa;
+        }
+        .container form button:hover{
+                color: #fff;
+        }
+    </style>
+    <script>
+        function login(){
+            let nama_peserta = document.getElementById("Nama_Peserta").value;
+            let password_peserta = document.getElementById("Password_Peserta").value;
+            let email_peserta = document.getElementById("Email_Peserta").value;
+
+            if(nama_peserta == "admin" && email_peserta == "admin@mail.com" && password_peserta == "admin"){
+                window.location = "index.html";
+                window.alert("Berhasil daftar dan Klik tutup/oke");
+            }else{
+                window.alert("Terjadi kesalahan pada saat membuat akun. Silahkan periksa kembali");
+                location.replace("form-login.html");
+            }
+        }
+    </script>    
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+          <form>
+              <label>Nama</label><br>
+              <input type="text" value="admin" id="Nama_Peserta"><br>
+              <label>Email</label><br>
+              <input type="email" value="admin@mail.com" id="Email_Peserta"><br>
+              <label>Password</label><br>
+              <input type="password" value="admin" id="Password_Peserta"><br>
+              <button onclick="login()">Daftar </button>
+          </form>
+      </div>     
+</body>
+</html>
